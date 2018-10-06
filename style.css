@@ -24,7 +24,7 @@ body {
 	top: 0px;
 	left: 0px;
 	height: 100%;
-	width: 300px;
+	width: 330px;
 	border-right: solid;
 }
 
@@ -37,8 +37,11 @@ body {
 	color: #4d4e53;
 	border: 1px solid;
 	padding: 10px;
-	padding-left: 45px;
-	/*padding-left: 75px;*/
+	padding-left: 75px;
+	position: relative;
+	left: -65px;
+	width: 90%;
+
 
 }
 
