@@ -5,95 +5,134 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div id = "main-container">
-	<nav id = "navbar">
-		<header>NavBar</header>
-	   	<ul>	
-		<a class = "nav-link" href="#"><li>Link</li></a>
-		<a class = "nav-link" href="#"><li>Link</li></a>
-		<a class = "nav-link" href="#"><li>Link</li></a>
-		<a class = "nav-link" href="#"><li>Link</li></a>
-		<a class = "nav-link" href="#"><li>Link</li></a>
-		</ul>
+<nav id = "navbar">
+	<header>HTML Documentation</header>
+   	<ul>	
+		<a class = "nav-link" href="#What_is_HTML?"><li>What is HTML?</li></a>
+		<a class = "nav-link" href="#Anatomy_of_an_HTML_Element"><li>Anatomy of an HTML Element</li></a>
+		<a class = "nav-link" href="#Nesting_Elements"><li>Nesting Elements</li></a>
+		<a class = "nav-link" href="#Images"><li>Images</li></a>
+		<a class = "nav-link" href="#Marking_Up_Text"><li>Marking Up Text</li></a>
+		<a class = "nav-link" href="#Links"><li>Links</li></a>
+		<a class = "nav-link" href="#Conclusion"><li>Conclusion</li></a>
+	</ul>
 	</nav>
 		
 	<main id = "main-doc">
-		<section id ="#" class = "main-section">
-			<header>How to Do</header>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id ="What_is_HTML?" class = "main-section">
+			<header>What is HTML?</header>
+			<article>
+			<p>HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on.  For example, take the following line of content:</p>
+			<code>My cat is very grumpy</code>
+			<p>If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:</p>
+			<code>&ltp&gtMy cat is very grumpy&lt/p&gt </code>
+			</article>
 		</section>
-		<section id ="#" class = "main-section">
-			<header>How to Shmoo</header>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id ="Anatomy_of_an_HTML_Element" class = "main-section">
+			<header>Anatomy of an HTML Element</header>
+			<article>
+			<p>The main parts are:</p>
+			<ol>
+				<li><strong>The opening tag:</strong> This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins, or starts to take effect — in this case where the paragraph begins.</li>
+				<li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.</li>
+				<li><strong>The content:</strong> This is the content of the element, which in this case is just text.</li>
+				<li><strong>The element:</strong> The opening tag, the closing tag, and the content together comprise the element.</li>
+			</ol>
+			<p>Elements can also have attributes, which look like this:</p>
+			<code>&ltp class = "editor-note"&gtMy cat is very grumpy&lt/p&gt</code>
+			<p>Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name, and editor-note is the attribute value. The class attribute allows you to give the element an identifier that can be later used to target the element with style information and other things.</p>
+			<p>An attribute should always have:</p>
+			<ol>
+				<li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes).</li>
+				<li>The attribute name, followed by an equals sign.</li>
+				<li>Opening and closing quote marks wrapped around the attribute value.</li>
+			</ol>
+			</article>
 		</section>
-		<section id ="#" class = "main-section">
-			<header>How to skedang</header>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id ="Nesting_Elements" class = "main-section">
+			<header>Nesting Elements</header>
+			<article>
+			<p>You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a &ltstrong&gt element, which means that the word is to be strongly emphasized:</p>
+			<code>&ltp&gtMy cat is &ltstrong&gtvery&lt/strong&gt grumpy.&lt/p&gt</code>
+			<p>You do however need to make sure that your elements are properly nested: in the example above we opened the &ltp&gt element first, then the &ltstrong&gt element, therefore we have to close the &ltstrong&gt element first, then the &ltp&gt. The following is incorrect:</p>
+			<code>&ltp&gtMy cat is &ltstrong&gtvery grumpy.&lt/p&gt&lt/strong&gt</code>
+			<p>The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap like above, then your web browser will try to make a best guess at what you were trying to say, which can lead to unexpected results. So don't do it!</p>
+			</article>
 		</section>
-		<section id ="#" class = "main-section">
-			<header>How to shebang</header>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id ="Images" class = "main-section">
+			<header>Images</header>
+			<article>
+			<p>Let's turn our attention to the &ltimg&gt element:</p>
+			<code>&ltimg src="images/firefox-icon.png" alt="My test image"&gt</code>
+			<p>It embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.</p>
+			We have also included an alt (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because:
+			<ol>
+				<li>They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li>
+				<li>Something has gone wrong causing the image to not display. For example, try deliberately changing the path inside your src attribute to make it incorrect.</li>
+			</ol>
+			</article>
 		</section>
-		<section id ="#" class = "main-section">
-			<header>How to Moo</header>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section id ="Marking_Up_Text" class = "main-section">
+			<header>Marking Up Text</header>
+			<article>
+			<p>This section will cover some of the basic HTML elements you'll use for marking up text.</p>
+			<h3>Headings</h3>	
+			<p>Heading elements allow you to specify that certain parts of your content are headings — or subheadings — of your content. In the same way that a book has a main title, chapter titles and subtitles, an HTML document can too. HTML contains six heading levels, &lth1&gt–&lth6&gt although you'll commonly only use 3–4 at most:</p>
+			<code>
+				&lth1&gtMy main title&lt/h1&gt<br>
+				&lth2&gtMy top level heading&lt/h2&gt<br>
+				&lth3&gtMy subheading&lt/h3&gt<br>
+				&lth4&gtMy sub-subheading&lt/h4&gt<br>
+			</code>
+			<h3>Paragraphs</h3>
+			<p>As explained above, &ltp&gt elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:</p>
+			<code>&ltp&gtThis is a single paragraph&lt/p&gt</code>
+			<h3>Lists</h3>
+			<p>A lot of the web's content is lists, and HTML has special elements for these. Marking up lists always consist of at least two elements. The most common list types are ordered and unordered lists:</p>
+			<ol>
+				<li><strong>Unordered lists</strong>are for lists where the order of the items doesn't matter, like a shopping list. These are wrapped in a &ltul&gt element.</li>
+				<li><strong>Ordered lists</strong>Ordered lists are for lists where the order of the items does matter, like a recipe. These are wrapped in an &ltol&gt element.</li>
+			</ol>
+			<p>Each item inside the lists is put inside an &ltli&gt (list item) element.</p>
+			<p>For example, if we wanted to turn the part of the following paragraph fragment into a list:</p>
+			<code>&ltp&gtAt Mozilla, we’re a global community of technologists, thinkers, and builders working together ... &ltp&gt</code>
+			<p>We could modify the markup to this:</p>
+			<code>&ltp&gtAt Mozilla, we’re a global community of&lt/p&gt<br>
+				&ltul&gt<br>
+ 					 &ltli&gttechnologists&lt/li&gt<br>
+  					 &ltli&gtthinkers&lt/li&gt<br>
+  					 &ltli&gtbuilders&lt/li&gt<br>
+				&lt/ul&gt
+			</code>
+			</article>
+		</section>
+		<section id = "Links" class = "main-section">
+			<header>Links</header>
+			<article>
+			<p>Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — &lta&gt — the "a" being short for "anchor". To make text within your paragraph into a link, follow these steps:</p>
+			<ol>
+				<li>Choose some text. We chose the text "Mozilla Manifesto".</li>
+				<li>Wrap the text in an &lta&gt element, like so:<br>
+					<code>&lta&gtMozilla Manifesto&lt/a&gt</code>
+				</li>
+				<li>Give the &lta&gt element an href attribute, like so:<br>
+					<code>&lta href=""&gtMozilla Manifesto&lt/a&gt</code>
+				</li>
+				<li>Fill in the value of this attribute with the web address that you want the link to link to:<br>
+					<code>&lta href="https://www.mozilla.org/en-US/about/manifesto/"&gtMozilla Manifesto&lt/a&gt</code>
+				</li>
+			</ol>
+			<p>You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.</p>
+			</article>
+		</section>
+		<section id = "Conclusion" class = "main-section">
+			<header>Conclusion</header>
+			<article>
+			<p>With these resources, you have a basic introduction to HTML! Happy Coding!</p>
+			<p>All resources taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">developer.mozilla.org</a></p>
+			<p>Project heavily inspired from this <a href="https://codepen.io/anon/pen/wYdgwm">codepen.io project</a></p>
+			</article>
 		</section>
 	</main>
-</div>
 </body>
 </html>
