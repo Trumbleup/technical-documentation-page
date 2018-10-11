@@ -10,7 +10,7 @@ body {
 
 
 #navbar {
-	position: fixed;
+	position: fixed;	/*Reference: https://codepen.io/anon/pen/LgLrbM ;*/
 	top: 0px;
 	left: 0px;
 	height: 100%;
@@ -23,12 +23,12 @@ body {
 }
 
 #navbar ul {
-	height: 88%;
+	height: 88%;				/*Reference: https://codepen.io/anon/pen/LgLrbM coded by @ChaituVR  ;*/	
 	list-style: none;
 }
 
 #navbar li {
-	position: relative;
+	position: relative;			/*Reference: https://codepen.io/anon/pen/LgLrbM coded by @ChaituVR  ;*/
 	border: 1px solid;
 	border-bottom: 0px;
 	border-right: none;
@@ -55,7 +55,7 @@ header {
 }
 
 #main-doc {
-	position: absolute;
+	position: absolute;		/*Reference: https://codepen.io/anon/pen/LgLrbM coded by @ChaituVR ;*/
 	padding: 20px;
 	padding-right: 40px;
 	margin-left: 300px;
@@ -67,7 +67,7 @@ section article {
 }
 
 code {
-	display: block;
+	display: block;		/*Reference: https://codepen.io/anon/pen/LgLrbM coded by @ChaituVR ;*/
 	background-color:#f7f7f7;
 	padding: 8px;
 	margin: 10px;
@@ -78,7 +78,7 @@ section li {
 }
 
 @media only screen and (max-width: 800px ) {
-	#navbar {
+	#navbar {	/*Reference: https://codepen.io/anon/pen/LgLrbM coded by @ChaituVR ;*/
 		position: absolute;
 		top:0;
       	padding:0;
@@ -94,7 +94,7 @@ section li {
 
 @media only screen and (max-width: 400px ) {
 
-code{
+code{ /*Reference: https://codepen.io/anon/pen/LgLrbM coded by @ChaituVR ;*/
     margin-left:-20px;
     width:100%;
     padding:15px;
